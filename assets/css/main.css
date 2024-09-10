@@ -1218,10 +1218,10 @@ section,
 }
 /* CSS for the Home Section */
 #home {
-  background-image: url("C:/Users/reyma/OneDrive/Pictures/5501609ee45d514d1f2c4a63502045e2.gif");
-  
-  
+  background-image: url('../assets/img/gif/5501609ee45d514d1f2c4a63502045e2.gif');
 }
+
+
 /* Button Styling */
 .featured-text-btn .btn {
   background-color: #ffffff; /* Set background color to white */

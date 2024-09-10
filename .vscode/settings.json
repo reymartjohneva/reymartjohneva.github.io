@@ -9,5 +9,10 @@
         "**/CVS": false,
         "**/Thumbs.db": false
     },
-    "explorer.fileNesting.enabled": true
+    "explorer.fileNesting.enabled": true,
+    "search.exclude": {
+        "**/*.code-search": false
+    },
+    "search.useIgnoreFiles": true,
+    "search.useGlobalIgnoreFiles": true
 }
