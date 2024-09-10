@@ -1247,25 +1247,4 @@ section,
   object-fit: cover; /* Ensures the image covers the container without distortion */
   display: block; /* Removes any extra space below the image */
 }
-/* Ensure the logo is positioned on the left and has appropriate padding/margin */
-.featured-text {
-  display: flex;
-  align-items: center; /* Vertically align items */
-  justify-content: space-between; /* Space between logo and content */
-}
-
-.logo {
-  width: 100px; /* Adjust size as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Space between logo and text */
-}
-
-.featured-text-content {
-  flex: 1; /* Take up remaining space */
-}
-
-/* Additional styles to center content or adjust as needed */
-.featured-text-card, .featured-name, .featured-text-info, .featured-text-btn, .tech-icons {
-  margin-bottom: 20px; /* Space between sections */
-}
 
