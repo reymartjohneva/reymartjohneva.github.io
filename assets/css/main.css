@@ -90,11 +90,11 @@ p, span, div, section {
 }
 
 /* General Styles for the Featured Section */
+/* General Styles for the Featured Section */
 #home {
- 
   background-position: center;
   padding: 150px 0;  /* Increased padding */
-  
+  color: white;
 }
 
 .featured-box .container {
@@ -142,7 +142,7 @@ p, span, div, section {
   width: 100%;
   max-width: 400px;  /* Increased image size */
   border-radius: 50%;
- 
+  margin-top: 30px;
   transition: transform 0.3s ease;
 }
 
@@ -190,6 +190,8 @@ p, span, div, section {
   .featured-image img {
     max-width: 300px;  /* Smaller image size for small screens */
   }
+}
+
 }
 
 /*--------------------------------------------------------------
