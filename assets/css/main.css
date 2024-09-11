@@ -89,6 +89,109 @@ p, span, div, section {
   scroll-behavior: smooth;
 }
 
+/* General Styles for the Featured Section */
+#home {
+ 
+  background-position: center;
+  padding: 150px 0;  /* Increased padding */
+  
+}
+
+.featured-box .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-text-card span {
+  font-size: 3rem;  /* Increased font size */
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.featured-name p {
+  font-size: 2.2rem;  /* Increased font size */
+  margin-bottom: 15px;
+}
+
+.featured-name .typedText {
+  font-weight: bold;
+  color: #ff66c4;  /* Customize the color as needed */
+}
+
+.featured-text-info p {
+  font-size: 1.5rem;  /* Increased font size */
+  margin-bottom: 25px;
+}
+
+.featured-text-btn .btn {
+  padding: 12px 25px;
+  font-size: 1.2rem;  /* Increased button font size */
+  background-color: #ff66c4;  /* Button color */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.featured-text-btn .btn:hover {
+  background-color: #d354a0;  /* Darker button color on hover */
+}
+
+.featured-image img {
+  width: 100%;
+  max-width: 400px;  /* Increased image size */
+  border-radius: 50%;
+ 
+  transition: transform 0.3s ease;
+}
+
+.featured-image img:hover {
+  transform: scale(1.05);  /* Slight zoom on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .featured-text-card span {
+    font-size: 2.5rem;
+  }
+
+  .featured-name p {
+    font-size: 1.8rem;
+  }
+
+  .featured-text-info p {
+    font-size: 1.3rem;
+  }
+
+  .featured-image img {
+    max-width: 350px;  /* Slightly smaller image for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    padding: 100px 0;  /* Slightly reduced padding for smaller screens */
+  }
+
+  .featured-text-card span {
+    font-size: 2rem;
+  }
+
+  .featured-name p {
+    font-size: 1.5rem;
+  }
+
+  .featured-text-btn .btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .featured-image img {
+    max-width: 300px;  /* Smaller image size for small screens */
+  }
+}
+
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
@@ -932,117 +1035,6 @@ section,
   z-index: 2; /* Overlay layer behind the image but above animation */
 }
 
-/* ----- FEATURED BOX ----- */
-.featured-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  min-height: 700px;
-  text-align: center;
-}
-.featured-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.featured-text-card span {
-  background: var(--third-color);
-  color: var(--color-white);
-  padding: 3px 8px;
-  font-size: 30px;
-  border-radius: 5px;
-}
-.featured-name {
-  font-size: 50px;
-  font-weight: 600;
-  color: var(--text-color-second);
-  margin-block: 20px;
-}
-.typedText {
-  text-transform: capitalize;
-  color: var(--text-color-third);
-}
-.featured-text-info {
-  font-size: 15px;
-  margin-bottom: 30px;
-  color: var(--text-color-second);
-}
-.featured-text-btn {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-.featured-text-btn > .blue-btn {
-  background: var(--first-color);
-  color: var(--color-white);
-}
-.featured-text-btn > .blue-btn:hover {
-  background: var(--first-color-hover);
-}
-.tech-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
-.icon:hover {
-  color: var(--first-color);
-}
-
-/* ----- MEDIA QUERIES ----- */
-@media (min-width: 768px) {
-  .featured-box {
-      flex-direction: row;
-      padding: 0 10vw;
-  }
-  .featured-text {
-      width: 50%;
-      text-align: left;
-  }
-  .featured-image {
-      width: 50%;
-      text-align: right;
-  }
-}
-.featured-image {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  min-height: 80vh;
-  width: 50%;
-}
-
-.image {
-  margin: auto 0;
-  width: 500px;
-  height: 500px;
-  border-radius: 55% 45% 55% 45%;
-  overflow: hidden;
-  animation: imgFloat 7s ease-in-out infinite;
-}
-
-.image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@keyframes imgFloat {
-  50% {
-      transform: translateY(10px);
-      border-radius: 45% 55% 45% 55%;
-  }
-}
 
 .scroll-btn {
   position: absolute;
